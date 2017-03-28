@@ -1,0 +1,22 @@
+{
+  "name": "绿色多瑙-多瑙影院破解（去广告，会员高清和午夜版）",
+  "short_name":"绿色多瑙",
+  "description": "支持多瑙影院去广告、支持播放会员高清视频、支持午夜版",
+  "version": "3.3.3",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "./icon_16.png",
+    "48": "./icon_48.png",
+    "128": "./icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://dnvod.eu/*","http://www.dnvod.eu/*","https://dnvod.eu/*","https://www.dnvod.eu/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "permissions": ["tabs","http://dnvod.eu/*","http://www.dnvod.eu/*","https://dnvod.eu/*","https://www.dnvod.eu/*"]
+}
